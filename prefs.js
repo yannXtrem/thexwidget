@@ -3,7 +3,7 @@ import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';
 import Gtk from 'gi://Gtk';
 
-import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/shell/extensions/prefs.js';
+import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 export default class XWidgetPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
@@ -58,29 +58,9 @@ export default class XWidgetPreferences extends ExtensionPreferences {
         const display = new Adw.PreferencesGroup({title: _('Affichage')});
         page.add(display);
 
-        const searchBar = new Adw.SwitchRow({
-            title: _('Barre de saisie dans le panneau'),
-            subtitle: _('Taper les commandes x sans préfixe'),
-            active: settings.get_boolean('show-search-bar'),
-        });
-        searchBar.connect('notify::active', () => {
-            settings.set_boolean('show-search-bar', searchBar.active);
-        });
-        display.add(searchBar);
-
-        const panelStatus = new Adw.SwitchRow({
-            title: _('Bouton d’état dans le panneau'),
-            subtitle: _('Tableau de bord en popup'),
-            active: settings.get_boolean('show-panel-status'),
-        });
-        panelStatus.connect('notify::active', () => {
-            settings.set_boolean('show-panel-status', panelStatus.active);
-        });
-        display.add(panelStatus);
-
         const desktopWidget = new Adw.SwitchRow({
             title: _('Widget de bureau'),
-            subtitle: _('Informations flottantes sur le bureau'),
+            subtitle: _('Informations + barre de commande sur le bureau'),
             active: settings.get_boolean('show-desktop-widget'),
         });
         desktopWidget.connect('notify::active', () => {
@@ -89,7 +69,7 @@ export default class XWidgetPreferences extends ExtensionPreferences {
         display.add(desktopWidget);
 
         const corner = new Adw.ComboRow({
-            title: _('Coin du widget de bureau'),
+            title: _('Coin du widget'),
             model: Gtk.StringList.new(['top-right', 'top-left', 'bottom-right', 'bottom-left']),
         });
         const cornerValue = settings.get_string('desktop-corner');
@@ -118,7 +98,7 @@ export default class XWidgetPreferences extends ExtensionPreferences {
         page.add(about);
         about.add(new Adw.ActionRow({
             title: _('The X Widget Assistant'),
-            subtitle: _('Extension GNOME Shell pour l’outil x'),
+            subtitle: _('Extension GNOME Shell pour l\'outil x'),
         }));
     }
 }

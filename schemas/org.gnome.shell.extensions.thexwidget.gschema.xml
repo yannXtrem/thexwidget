@@ -12,23 +12,13 @@
       <summary>Intervalle de rafraîchissement</summary>
       <description>Secondes entre deux mises à jour du tableau de bord.</description>
     </key>
-    <key name="show-search-bar" type="b">
-      <default>true</default>
-      <summary>Afficher la barre de saisie</summary>
-      <description>Affiche la barre de commande dans le panneau supérieur.</description>
-    </key>
-    <key name="show-panel-status" type="b">
-      <default>true</default>
-      <summary>Afficher le bouton d'état</summary>
-      <description>Affiche le bouton d'état et son popup tableau de bord.</description>
-    </key>
     <key name="show-desktop-widget" type="b">
       <default>true</default>
       <summary>Afficher le widget de bureau</summary>
-      <description>Affiche le widget flottant sur le bureau.</description>
+      <description>Affiche le widget flottant sur le bureau (infos + barre de commande).</description>
     </key>
     <key name="desktop-corner" type="s">
-      <default>'top-right'</default>
+      <default>'bottom-right'</default>
       <summary>Coin du widget de bureau</summary>
       <description>Position du widget sur le bureau.</description>
     </key>

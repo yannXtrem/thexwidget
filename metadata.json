@@ -1,7 +1,7 @@
 {
   "name": "The X Widget Assistant",
   "description": "Barre de saisie et tableau de bord pour l'outil x : prochain cours, bus, devoirs, batterie, systeme, actions rapides, et widget de bureau.",
-  "uuid": "thexwidget@yannxtrem.github.io",
+  "uuid": "thexwidget@yannxtrem.github.com",
   "shell-version": [
     "50"
   ],

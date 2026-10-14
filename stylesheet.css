@@ -89,6 +89,8 @@
     padding: 10px 12px;
     spacing: 3px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 280px;
+    max-width: 340px;
 }
 
 .xwidget-desktop-clock {

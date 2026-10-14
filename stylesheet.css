@@ -1,0 +1,138 @@
+/* thexwidget@yannxtrem — styles */
+
+.xwidget-search-box {
+    spacing: 6px;
+    padding: 0 8px;
+}
+
+.xwidget-search-icon {
+    icon-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.xwidget-search-entry {
+    min-width: 220px;
+    max-width: 320px;
+    font-size: 13px;
+}
+
+.xwidget-status-label {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.xwidget-menu {
+    min-width: 340px;
+    max-width: 460px;
+}
+
+.xwidget-suggestion {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.xwidget-quick-item {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.xwidget-result-box {
+    padding: 6px 8px;
+    spacing: 4px;
+}
+
+.xwidget-result-header {
+    font-weight: bold;
+    font-size: 12px;
+    color: #77c6e0;
+}
+
+.xwidget-result-body {
+    font-family: monospace;
+    font-size: 11px;
+    color: #d0d0d0;
+    max-width: 420px;
+}
+
+.xwidget-result-footer {
+    font-size: 10px;
+    color: #888;
+}
+
+.xwidget-result-running {
+    font-style: italic;
+    color: #aaa;
+}
+
+.xwidget-dash-row {
+    spacing: 8px;
+    padding: 2px 8px;
+}
+
+.xwidget-dash-key {
+    font-weight: bold;
+    font-size: 11px;
+    color: #77c6e0;
+    min-width: 52px;
+}
+
+.xwidget-dash-val {
+    font-size: 11px;
+    color: #e0e0e0;
+}
+
+/* Widget de bureau */
+.xwidget-desktop {
+    background-color: rgba(20, 20, 24, 0.85);
+    border-radius: 10px;
+    padding: 10px 12px;
+    spacing: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.xwidget-desktop-clock {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.xwidget-desktop-date {
+    font-size: 11px;
+    color: #b0b0b0;
+    margin-bottom: 4px;
+}
+
+.xwidget-desktop-line {
+    font-size: 11px;
+    color: #d0d0d0;
+}
+
+.xwidget-desktop-bar-row {
+    spacing: 6px;
+    padding: 1px 0;
+}
+
+.xwidget-desktop-bar-key {
+    font-size: 10px;
+    font-weight: bold;
+    color: #909090;
+    min-width: 30px;
+}
+
+.xwidget-desktop-bar {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+.xwidget-desktop-bar-fill {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.xwidget-desktop-bar-val {
+    font-size: 10px;
+    color: #c0c0c0;
+    min-width: 64px;
+}

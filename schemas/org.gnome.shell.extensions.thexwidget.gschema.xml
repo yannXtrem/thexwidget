@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.thexwidget" path="/org/gnome/shell/extensions/thexwidget/">
+    <key name="x-path" type="s">
+      <default>'/home/yannxtrem/Bureau/yannxtrem/bin/x'</default>
+      <summary>Chemin du binaire x</summary>
+      <description>Exécutable de l'outil global x utilisé par le widget.</description>
+    </key>
+    <key name="refresh-seconds" type="i">
+      <default>30</default>
+      <range min="10" max="3600"/>
+      <summary>Intervalle de rafraîchissement</summary>
+      <description>Secondes entre deux mises à jour du tableau de bord.</description>
+    </key>
+    <key name="show-search-bar" type="b">
+      <default>true</default>
+      <summary>Afficher la barre de saisie</summary>
+      <description>Affiche la barre de commande dans le panneau supérieur.</description>
+    </key>
+    <key name="show-panel-status" type="b">
+      <default>true</default>
+      <summary>Afficher le bouton d'état</summary>
+      <description>Affiche le bouton d'état et son popup tableau de bord.</description>
+    </key>
+    <key name="show-desktop-widget" type="b">
+      <default>true</default>
+      <summary>Afficher le widget de bureau</summary>
+      <description>Affiche le widget flottant sur le bureau.</description>
+    </key>
+    <key name="desktop-corner" type="s">
+      <default>'top-right'</default>
+      <summary>Coin du widget de bureau</summary>
+      <description>Position du widget sur le bureau.</description>
+    </key>
+    <key name="desktop-opacity" type="d">
+      <default>0.85</default>
+      <range min="0.2" max="1.0"/>
+      <summary>Opacité du widget de bureau</summary>
+      <description>Opacité du widget flottant (0.2 à 1.0).</description>
+    </key>
+    <key name="max-output-lines" type="i">
+      <default>200</default>
+      <range min="20" max="2000"/>
+      <summary>Lignes de sortie conservées</summary>
+      <description>Nombre maximal de lignes affichées pour une commande.</description>
+    </key>
+    <key name="focus-search" type="as">
+      <default><![CDATA[['<Super>space']]]></default>
+      <summary>Raccourci de focus</summary>
+      <description>Combinaison de touches pour donner le focus à la barre de saisie.</description>
+    </key>
+  </schema>
+</schemalist>
